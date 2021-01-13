@@ -1,56 +1,305 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello, world!</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Adding Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
-  
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello, world!</title>
 
-    <header class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-          <div class="collapse navbar-collapse " id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Adding Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Adding FontAwesome -->
+  <link href="css/all.css" rel="stylesheet">
+  <!--load all styles -->
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ./Navbar -->
+    <section class="container intro">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1><span class="highlight">Be the Penguins</span> of Winter</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry.</p>
+          <button class="btn btn-secondary btn-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+        </div>
+        <div class="col-md-6 order-first order-md-1"> <img class="img-fluid" src="images/intro-image.png" alt="">
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- ./Header -->
+  <main class="py-5">
+
+    <!-- .woman-jacket -->
+    <section id="woman-jacket" class="container py-5">
+      <h2>Woman Jacket</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-5">
+        <div class="col">
+          <div class="card p-3 border-0 shadow h-100">
+            <div class="card-img">
+              <img class="img-fluid" src="images/yellow-coat.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Yellow Coat Jacket</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between">
+              <span class="price">$300</span>
+              <button class="btn btn-secondary btn-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
+        <div class="col">
+          <div class="card p-3 border-0 shadow h-100">
+            <div class="card-img">
+              <img class="img-fluid" src="images/ladies-jacket.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ladies Jacket</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between">
+              <span class="price">$300</span>
+              <button class="btn btn-secondary btn-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 border-0 shadow h-100">
+            <div class="card-img">
+              <img class="img-fluid" src="images/woman-lather-jacket.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Woman Leather Jacket</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0  d-flex align-items-center justify-content-between">
+              <span class="price">$300</span>
+              <button class="btn btn-secondary btn-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./woman-jacket -->
+    <!-- .man-jacket -->
+    <section id="man-jacket" class="container py-5">
+      <h2>Man Jacket</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-5">
+        <div class="col">
+          <div class="card p-3 border-0 shadow h-100">
+            <div class="card-img">
+              <img class="img-fluid" src="images/snowboard-jacket.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Snowboard Jacket Mens</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between">
+              <span class="price">$234</span>
+              <button class="btn btn-secondary btn-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 border-0 shadow h-100">
+            <div class="card-img">
+              <img class="img-fluid" src="images/man-later-jacket.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Man Leather Jackets</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between">
+              <span class="price">$234</span>
+              <button class="btn btn-secondary btn-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-3 border-0 shadow h-100">
+            <div class="card-img">
+              <img class="img-fluid" src="images/man-casual-jacket.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Man Casual Jackets</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0  d-flex align-items-center justify-content-between">
+              <span class="price">$234</span>
+              <button class="btn btn-secondary btn-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./.man-jacket -->
+    <section id="offer" class="container my-5 py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card shadow border-0 p-2 mb-4" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3 p-4 d-flex justify-content-center align-items-center">
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+                <img class="img-fluid" src="images/icon1.png" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Find the Perfect Fit</h5>
+                  <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow border-0 p-2 mb-4" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3 p-4 d-flex justify-content-center align-items-center">
 
-  </body>
+                <img class="img-fluid" src="images/icon2.png" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Find the Perfect Fit</h5>
+                  <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow border-0 p-2 mb-4" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3 p-4 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="images/icon3.png" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Find the Perfect Fit</h5>
+                  <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 order-first order-md-1 d-flex justify-content-center align-items-center">
+          <img class="img-fluid" src="images/XMLID 1.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ./main -->
+  <footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </footer>
+  <!-- /footer -->
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
