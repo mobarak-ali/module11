@@ -234,3 +234,7 @@ button.btn.btn-secondary.btn-lg:hover {
 .navbar-light .navbar-toggler-icon {
     background-image: url(../images/nav-icon.png) !important;
 }
+
+.footer-logo{
+    height: 100px;
+}
