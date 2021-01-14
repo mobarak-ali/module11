@@ -171,9 +171,11 @@ span.highlight {
 
 button.btn.btn-secondary.btn-lg:hover {
     background: linear-gradient(180deg, hsl(72deg 77% 57%) 0%, #85A019 100%);
-
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .btn-secondary {padding: 0.5rem 1rem;}
+ }
 .social-icons a {
     font-size: 30px;
     display: inline-block;
