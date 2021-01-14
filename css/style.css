@@ -56,59 +56,12 @@ h6,
     font-weight: 700;
 }
 
-/**/
+/*Navbar*/
 .navbar {
     background-image: url();
     background-repeat: no-repeat;
     background-position: 370px -30px;
     background-color: #85A019;
-}
-
-@media (max-width: 767.98px) { 
-        .shadow {
-            box-shadow: none !important;
-    }
-}
-@media (min-width: 992px) {
-    .navbar-collapse::after {
-        content: url("../images/nab-bg.png");
-        width: 300px;
-        height: 110px;
-        position: absolute;
-        top: 0px;
-        margin-left: 10px;
-        animation: up-down 5s linear infinite;
-    }
-
-    h1,
-    .h1 {
-        font-size: 80px;
-    }
-    h2,
-.h2 {
-    font-size: 48px;
-}
-
-}
-
-
-@keyframes up-down {
-    0% {
-        transform: translate(0px, 0px);
-    }
-
-    25% {
-        transform: translate(70px, -50px);
-    }
-
-    75% {
-        transform: translate(150px, 0px);
-    }
-
-    100% {
-        transform: translate(0px, 0px);
-    }
-
 }
 
 .navbar-brand img {
@@ -173,9 +126,7 @@ button.btn.btn-secondary.btn-lg:hover {
     background: linear-gradient(180deg, hsl(72deg 77% 57%) 0%, #85A019 100%);
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    .btn-secondary {padding: 0.5rem 1rem;}
- }
+
 .social-icons a {
     font-size: 30px;
     display: inline-block;
@@ -238,3 +189,56 @@ button.btn.btn-secondary.btn-lg:hover {
 .footer-logo{
     height: 100px;
 }
+/* Annimations*/
+
+@keyframes up-down {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    
+    25% {
+        transform: translate(70px, -50px);
+    }
+    
+    75% {
+        transform: translate(150px, 0px);
+    }
+    
+    100% {
+        transform: translate(0px, 0px);
+    }
+    
+    }
+    
+
+/* Responsive */
+
+@media (max-width: 767.98px) { 
+    .shadow {
+        box-shadow: none !important;
+}
+}
+@media (min-width: 992px) {
+.navbar-collapse::after {
+    content: url("../images/nab-bg.png");
+    width: 300px;
+    height: 110px;
+    position: absolute;
+    top: 0px;
+    margin-left: 10px;
+    animation: up-down 15s linear infinite;
+}
+
+h1,
+.h1 {
+    font-size: 80px;
+}
+h2,
+.h2 {
+font-size: 48px;
+}
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .btn-secondary {padding: 0.5rem 1rem;}
+ }
