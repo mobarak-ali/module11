@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello, world!</title>
+  <title>11-1: Responsive landing page assignment</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -20,43 +20,38 @@
 
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">About Us</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- ./Navbar -->
-    <section class="container intro">
+    <section class="container intro py-5 my-5">
       <div class="row align-items-center">
         <div class="col-md-6">
           <h1><span class="highlight">Be the Penguins</span> of Winter</h1>
@@ -64,18 +59,18 @@
             and typesetting industry.</p>
           <button class="btn btn-secondary btn-lg"><i class="fas fa-shopping-cart"></i> Buy Now</button>
         </div>
-        <div class="col-md-6 order-first order-md-1"> <img class="img-fluid" src="images/intro-image.png" alt="">
+        <div class="col-md-6"> <img class="img-fluid" src="images/intro-image.png" alt="">
         </div>
       </div>
     </section>
   </header>
   <!-- ./Header -->
-  <main class="py-5">
+  <main class="py-5 mt-5">
 
     <!-- .woman-jacket -->
     <section id="woman-jacket" class="container py-5">
-      <h2>Woman Jacket</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-5">
+      <h2 class="text-center text-lg-start ">Woman Jacket</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3 mb-5">
         <div class="col">
           <div class="card p-3 border-0 shadow h-100">
             <div class="card-img">
@@ -129,8 +124,8 @@
     <!-- ./woman-jacket -->
     <!-- .man-jacket -->
     <section id="man-jacket" class="container py-5">
-      <h2>Man Jacket</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-5">
+      <h2 class="text-center text-lg-start">Man Jacket</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3 mb-5">
         <div class="col">
           <div class="card p-3 border-0 shadow h-100">
             <div class="card-img">
@@ -184,15 +179,14 @@
     <!-- ./.man-jacket -->
     <section id="offer" class="container my-5 py-5">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6 align-items-md-center align-items-lg-start d-flex flex-column">
           <div class="card shadow border-0 p-2 mb-4" style="max-width: 540px;">
             <div class="row g-0">
-              <div class="col-md-3 p-4 d-flex justify-content-center align-items-center">
-
+              <div class="col-6 offset-3 offset-md-0 col-md-3  p-4 d-flex justify-content-center align-items-center">
                 <img class="img-fluid" src="images/icon1.png" alt="...">
               </div>
               <div class="col-md-9">
-                <div class="card-body">
+                <div class="card-body text-center text-md-start">
                   <h5 class="card-title">Find the Perfect Fit</h5>
                   <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
                 </div>
@@ -201,99 +195,56 @@
           </div>
           <div class="card shadow border-0 p-2 mb-4" style="max-width: 540px;">
             <div class="row g-0">
-              <div class="col-md-3 p-4 d-flex justify-content-center align-items-center">
-
+              <div class="col-6 offset-3 offset-md-0 col-md-3  p-4 d-flex justify-content-center align-items-center">
                 <img class="img-fluid" src="images/icon2.png" alt="...">
               </div>
               <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Find the Perfect Fit</h5>
-                  <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
+                <div class="card-body text-center text-md-start">
+                  <h5 class="card-title">Free Exchanges</h5>
+                  <p class="card-text">One of the many reasons you can shop with peace of mind.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="card shadow border-0 p-2 mb-4" style="max-width: 540px;">
             <div class="row g-0">
-              <div class="col-md-3 p-4 d-flex justify-content-center align-items-center">
+              <div class="col-6 offset-3 offset-md-0 col-md-3  p-4 d-flex justify-content-center align-items-center">
                 <img class="img-fluid" src="images/icon3.png" alt="...">
               </div>
               <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Find the Perfect Fit</h5>
-                  <p class="card-text">Everybody is different, which is why we offer styles for every body.</p>
+                <div class="card-body text-center text-md-start">
+                  <h5 class="card-title">Contact Our Seller</h5>
+                  <p class="card-text">They are here to help you. That's quite
+                    literally what we pay them for.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 order-first order-md-1 d-flex justify-content-center align-items-center">
+        <div class="col-lg-6 order-first mb-5 mb-lg-0 order-lg-1 d-flex justify-content-center align-items-center">
           <img class="img-fluid" src="images/XMLID 1.png" alt="">
         </div>
       </div>
     </section>
   </main>
   <!-- ./main -->
-  <footer>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  <footer class="pt-3 border-top">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 offset-md-4 align-items-center justify-content-center d-flex flex-column">
+          <img class="w-50" src="images/footer logo.png" alt="">
+          <div class="social-icons text-center my-3">
+            <a href="/"><i class="fab fa-facebook"></i></a>
+            <a href="/"><i class="fab fa-instagram"></i></a>
+            <a href="/"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="align-items-center justify-content-center d-flex flex-column">
+          <p class=" m-0">&copy2021, Penguin Fashion, All Right Reserved. </p>
+          <p><a class="px-1" href="/">Privacy Policy</a> | <a class="px-1" href="/">Terms &AMP; Conditions</a></p>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- /footer -->
   <!-- Optional JavaScript; choose one of the two! -->
@@ -303,3 +254,6 @@
 </body>
 
 </html>
+
+
+  

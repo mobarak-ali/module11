@@ -25,12 +25,12 @@ h2,
 
 h1,
 .h1 {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 h2,
 .h2 {
-    font-size: 48px;
+    font-size: 36px;
 }
 
 h5,
@@ -56,10 +56,76 @@ h6,
     font-weight: 700;
 }
 
+/**/
+.navbar {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 370px -30px;
+    background-color: #85A019;
+}
+
+@media (max-width: 767.98px) { 
+        .shadow {
+            box-shadow: none !important;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-collapse::after {
+        content: url("../images/nab-bg.png");
+        width: 300px;
+        height: 110px;
+        position: absolute;
+        top: 0px;
+        margin-left: 10px;
+        animation: up-down 5s linear infinite;
+    }
+
+    h1,
+    .h1 {
+        font-size: 80px;
+    }
+    h2,
+.h2 {
+    font-size: 48px;
+}
+
+}
+
+
+@keyframes up-down {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(70px, -50px);
+    }
+
+    75% {
+        transform: translate(150px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+}
+
 .navbar-brand img {
     height: 40px;
 }
 
+.nav-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav-item a.nav-link:hover {
+    color: #000 !important;
+}
 
 
 .highlight {
@@ -100,4 +166,69 @@ span.highlight {
     border: 0;
     line-height: 40px;
     padding: 10px 35px;
+    transition: all .5s;
+}
+
+button.btn.btn-secondary.btn-lg:hover {
+    background: linear-gradient(180deg, hsl(72deg 77% 57%) 0%, #85A019 100%);
+
+}
+
+.social-icons a {
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 25px;
+    overflow: hidden;
+    line-height: 50px;
+    background: #000000;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1%;
+    width: 1%;
+    transition: all 0.25s ease;
+    border-radius: 25px;
+    background: transparent;
+    z-index: 0;
+    transform: translate(25px, 25px);
+
+}
+
+.social-icons a i {
+    position: relative;
+    color: #ffffff;
+    font-size: 25px;
+    transition: all 0.25s ease;
+    z-index: 1;
+    line-height: 50px;
+    transition: all 0.25s ease;
+}
+
+.social-icons a:hover::before {
+    height: 100%;
+    width: 100%;
+    transform: translate(0, 0);
+    background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+    border: 1px solid #51610f;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/nav-icon.png) !important;
 }
